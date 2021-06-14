@@ -1,9 +1,8 @@
 # import Flask, pymongo, and scrape_mars (your python file)
-
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify, redirect
+import pymongo
 from flask_pymongo import PyMongo
 import scrape_mars
-
 
 # Instantiate a Flask app
 app = Flask(__name__)
